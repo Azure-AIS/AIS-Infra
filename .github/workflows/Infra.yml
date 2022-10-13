@@ -17,17 +17,20 @@ jobs:
     environment: 
       name: Dev
     steps:
+
+    - name: Bash Commands
+      run: |
+        ls;
+        echo pwd;
+        echo $GITHUB_WORKSPACE;
+
     - name: Azure Login
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS  }}
         enable-AzPSSession: true 
 
-    - name: Bash Commands
-      run: |
-        ls;
-        echo pwd
-        eco $GITHUB_WORKSPACE
+
 
 
 # Checkout
