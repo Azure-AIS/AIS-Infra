@@ -22,14 +22,18 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS  }}
         enable-AzPSSession: true 
-    
+
+    - name: Bash Commands
+      run: |
+        ls;
+        echo pwd
+        eco $GITHUB_WORKSPACE
+
 
 # Checkout
     - name: Checkout
       uses: actions/checkout@v1
       
-    - name: Package logic
-      run: (ls;)
 
     # Deployment of template  
     - name: Deploy Logic App Resources
