@@ -27,6 +27,9 @@ jobs:
 # Checkout
     - name: Checkout
       uses: actions/checkout@v1
+      
+    - name: Package logic
+      run: (ls;)
 
     # Deployment of template  
     - name: Deploy Logic App Resources
