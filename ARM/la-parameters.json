@@ -3,16 +3,16 @@
     "contentVersion": "1.0.0.0",
     "parameters": { 
         "location": {
-            "value": "West Europe"
+            "value": "East US"
         },       
         "logicAppName": {
-            "value": "HelloWorldStnd01"
+            "value": "AisDevOpsDemo2022"
         },
         "appServicePlanName": {
             "value": "asp-name"
         },
         "storageName": {
-            "value": "tst2storercvrmsgstrgacc"
+            "value": "storageaccountaisdevops"
         },
         "STORAGEACOUNTACCESSKEY": {
             "value": ""
