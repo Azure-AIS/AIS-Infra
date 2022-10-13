@@ -19,10 +19,14 @@ jobs:
     steps:
 
     - name: Bash Commands
+      shell: bash
       run: |
-        ls;
-        echo pwd;
+        expr 1 + 1 > output.log;
         echo $GITHUB_WORKSPACE;
+    - name: run ls command
+      run: ls
+            
+      
 
     - name: Azure Login
       uses: azure/login@v1
